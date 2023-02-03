@@ -1,0 +1,58 @@
+doctype html
+html
+  head
+    title Madhav Dance Academy
+    style
+      include ../static/style.css
+body
+    nav#navbar
+        ul
+            div#logo
+                img(src="/static/logo.jpg")
+                | MDA
+            li #[a(href="/") Home]
+            li #[a(href="/") About]
+            li #[a(href="/") Services]
+            li #[a(href="/") Class Info]
+            li #[a(href="/") Contact Us]
+    section#introSection
+      div Welcome to Madhav's Dance Academy
+            div.small Eat Sleep Dance Repeat
+    section#missionSection
+        h2 Our Mission
+        div.card
+            h3 Dance Perfection
+            div.card-box
+                div.card-img
+                    img(src="/static/card 1.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Dance the way you like
+            div.card-box
+                div.card-img
+                    img(src="/static/card 2.jpg")
+                div.card-content
+                    p This is the best dance academy of the universe
+
+        div.card
+            h3 Expert Teaching
+            div.card-box
+                div.card-img
+                    img(src="/static/card3.jpg")
+
+                div.card-content
+                    p This is the best dance academy of the universe
+          
+    section#sponsorsSection
+        h2 OurSponsers  
+        img(src= "/static/sp1.jpg", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/sp2.jpg", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/sp3.png", alt= "Sponsor Image", class= "spImage")
+        img(src= "/static/sp4.png", alt= "Sponsor Image", class= "spImage")  
+    footer#footer
+      | Copyright © 2019 MadhavAcademy.com | All Rights Reserved
+     
+    script 
+        include ../static/index.js
